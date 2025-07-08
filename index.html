@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Amantajatii's Portofolio Website</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+            body {
+                font-family: "Poppins", sans-serif;
+            }
+        </style>
+
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+
+    <body class="bg-zinc-900">
+        <div
+            id="mobile-nav"
+            class="z-50 -mt-8 bg-black/70 backdrop-blur-md w-full h-full fixed flex flex-col justify-center items-center text-2xl gap-y-5 text-white opacity-0 pointer-events-none transform transition-opacity duration-300 ease-out"
+            onclick="closeMobileNav()"
+        >
+            <a href="#" class="">Home</a>
+            <a href="#about" class="">About Me</a>
+            <a href="#my-journey" class="">My Journey</a>
+            <a href="#project" class="">Project</a>
+            <a href="#social-media" class="">Social Media</a>
+        </div>
+
+        <!-- start of nav-bar -->
+        <header class="mb-20">
+            <nav class="fixed top-0 w-screen z-40 shadow-lg">
+                <div
+                    class="flex items-center justify-center py-4 md:py-7 p-4 bg-zinc-800/30 backdrop-blur-sm text-white"
+                >
+                    <div class="hidden md:flex space-x-16 font-semibold">
+                        <a
+                            href="#"
+                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
+                            >Home</a
+                        >
+                        <a
+                            href="#about"
+                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
+                            >About Me</a
+                        >
+                        <a
+                            href="#my-journey"
+                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
+                            >My Journey</a
+                        >
+                        <a
+                            href="#project"
+                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
+                            >Project</a
+                        >
+                        <a
+                            href="#social-media"
+                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
+                            >Social Media</a
+                        >
+                    </div>
+                    <div
+                        id="icon-mobile-nav"
+                        class="w-full h-full flex md:hidden justify-end text-4xl"
+                        onclick="openMobileNav()"
+                    >
+                        &#9776;
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- end of nav-bar -->
+
+        <!-- main content -->
+        <!-- home -->
+        <div class="w-screen h-auto overflow-hidden -mt-12">
+            <div
+                id="home"
+                class="bg-gradient-to-b from-zinc-900 to-blue-950/50 rounded-b-full -mx-50"
+            >
+                <div
+                    class="py-32 mx-60 block md:flex items-center justify-evenly"
+                >
+                    <div class="text-white space-y-4 mb-20">
+                        <h2 class="text-5xl font-medium">Hi, I'm</h2>
+                        <h1 class="text-6xl text-blue-400 font-semibold">
+                            Diaz Amantajati
+                        </h1>
+                        <p class="text-zinc-200">
+                            I'm an undergraduate Information Engineering student
+                            at Gadjah Mada University.
+                        </p>
+                    </div>
+                    <div
+                        class="w-6/12 md:w-4/12 md:block lg:w-2/12 mx-auto lg:m-0 rounded-full overflow-hidden"
+                    >
+                        <img src="images/foto-diaz.jpeg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of home -->
+        <!-- about me -->
+        <section id="about">
+            <div class="pb-24 px-16 md:px-32 bg-gradient-to-b from-zinc-900 to-zinc-950">
+                <div class="flex">
+                    <div class="pt-24 flex justify-start">
+                        <h1 class="text-5xl font-bold text-white">ABOUT ME</h1>
+                    </div>
+                </div>
+                <div class="w-full md:w-10/12 block pt-10">
+                    <p class="text-zinc-200 text-justify">
+                        I'm Diaz, 18, an Information Technology student at
+                        Universitas Gadjah Mada in Yogyakarta. My journey began
+                        with a strong interest in design and documentation, but
+                        my curiosity has since led me to a profound fascination
+                        with software engineering. Beyond my academic
+                        requirements, I am dedicated to exploring this field,
+                        constantly seeking new knowledge and practical
+                        experiences. My goal is to apply my problem-solving
+                        skills and creative approach to develop robust and
+                        user-centric software.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- end of about me -->
+
+        <section
+            id="my-journey"
+            class="pt-24 px-4 bg-gradient-to-b from-zinc-950 to-zinc-900 text-white"
+        >
+            <div class="container mx-auto">
+                <h2 class="text-5xl font-bold text-center mb-10 text-white">
+                    MY JOURNEY
+                </h2>
+
+                <div class="relative wrap overflow-hidden p-10 h-full">
+                    <div
+                        class="border-2-2 absolute border-opacity-20 border-blue-500/50 h-full border"
+                        style="left: 50%"
+                    ></div>
+
+                    <div
+                        class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+                    >
+                        <div class="order-1 w-5/12"></div>
+                        <div
+                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl size-10 rounded-full"
+                        ></div>
+                        <div
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                        >
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
+                                School
+                            </h3>
+                            <h4 class="mb-2 font-bold text-lg">
+                                MAS Mu'allimin Muhammadiyah
+                            </h4>
+                            <p
+                                class="text-sm leading-snug text-justify tracking-wide text-gray-300 text-opacity-100"
+                            >
+                                At MAS Mu'allimin Muhammadiyah, I cultivated
+                                foundational academic knowledge alongside
+                                critical thinking and discipline. This
+                                environment fostered my adaptability and
+                                continuous learning mindset, which has been
+                                instrumental in my subsequent exploration of
+                                design and, more recently, software engineering.
+                            </p>
+                            <p class="text-xs text-gray-400 mt-2">2021</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mb-8 flex justify-between items-center w-full right-timeline"
+                    >
+                        <div class="order-1 w-5/12"></div>
+                        <div
+                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                        ></div>
+                        <div
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                        >
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
+                                Staff of Media
+                            </h3>
+                            <h4 class="mb-2 font-bold text-lg">
+                                FORTASI Mu'allimin 2023
+                            </h4>
+                            <p
+                                class="text-sm leading-snug text-justify tracking-wide text-gray-300 text-opacity-100"
+                            >
+                                As a Media Staff member for FORTASI Mu'allimin
+                                2023, I was responsible for managing visual and
+                                narrative content across various publications
+                                and platforms. This experience honed my skills
+                                in visual communication, effective material
+                                selection, and basic project management – all
+                                highly relevant to development workflows and
+                                effective team collaboration.
+                            </p>
+                            <p class="text-xs text-gray-400 mt-2">2022</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+                    >
+                        <div class="order-1 w-5/12"></div>
+                        <div
+                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                        ></div>
+                        <div
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                        >
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
+                                Staff of Illustration and Layout
+                            </h3>
+                            <h4 class="mb-2 font-bold text-lg">
+                                Lembaga Pers Mu'allimin
+                            </h4>
+                            <p
+                                class="text-sm leading-snug text-justify tracking-wide text-gray-300 text-opacity-100"
+                            >
+                                In Lembaga Pers Mu'allimin, I served as Staff of
+                                Illustration and Layout. My role involved
+                                creating engaging visual designs and ensuring
+                                clear, structured information presentation. This
+                                experience was crucial in developing my
+                                aesthetic sensibility, meticulous attention to
+                                detail, and a foundational understanding of user
+                                experience (UX) and user interface (UI) from a
+                                design perspective.
+                            </p>
+                            <p class="text-xs text-gray-400 mt-2">2022-2023</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mb-8 flex justify-between items-center w-full right-timeline"
+                    >
+                        <div class="order-1 w-5/12"></div>
+                        <div
+                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                        ></div>
+                        <div
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                        >
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
+                                Staff of Media Creative
+                            </h3>
+                            <h4 class="mb-2 font-bold text-lg">
+                                Mu'allimin Annual Competition and Festival VIII
+                            </h4>
+                            <p
+                                class="text-sm leading-snug text-justify tracking-wide text-gray-300 text-opacity-100"
+                            >
+                                As a Media Creative Staff for Mu'allimin Annual
+                                Competition and Festival VIII, I was responsible
+                                for the development and production of visual
+                                materials and digital campaigns for the event.
+                                This experience honed my skills in graphic
+                                design, multimedia content management, and the
+                                execution of effective promotional strategies.
+                            </p>
+                            <p class="text-xs text-gray-400 mt-2">2023</p>
+                        </div>
+                    </div>
+                    <div
+                        class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+                    >
+                        <div class="order-1 w-5/12"></div>
+                        <div
+                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                        ></div>
+                        <div
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                        >
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
+                                Staff of DDD
+                            </h3>
+                            <h4 class="mb-2 font-bold text-lg">
+                                Open House DTETI FT UGM 2024
+                            </h4>
+                            <p
+                                class="text-sm leading-snug text-justify tracking-wide text-gray-300 text-opacity-100"
+                            >
+                                At Open House DTETI FT UGM 2024, I served as
+                                Staff of DDD (Design, Documentation, and
+                                Decoration). My duties included designing the
+                                event layout, compiling clear informational
+                                materials, and executing visual decorations.
+                                This experience highlights my abilities in
+                                design coordination, information organization,
+                                and the implementation of creative ideas.
+                            </p>
+                            <p class="text-xs text-gray-400 mt-2">2024</p>
+                        </div>
+                    </div>
+                    <div
+                        class="mb-8 flex justify-between items-center w-full right-timeline"
+                    >
+                        <div class="order-1 w-5/12"></div>
+                        <div
+                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                        ></div>
+                        <div
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                        >
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
+                                Staff of Design
+                            </h3>
+                            <h4 class="mb-2 font-bold text-lg">
+                                ENFORIAN 2024
+                            </h4>
+                            <p
+                                class="text-sm leading-snug text-justify tracking-wide text-gray-300 text-opacity-100"
+                            >
+                                As a Design Staff for ENFORIAN 2024, I was
+                                responsible for developing the event's visual
+                                identity and various supporting graphic
+                                elements. This role strengthened my
+                                understanding of design principles, branding,
+                                and the importance of visual consistency across
+                                all publications and promotional materials.
+                            </p>
+                            <p class="text-xs text-gray-400 mt-2">2024</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+                    >
+                        <div class="order-1 w-5/12"></div>
+                        <div
+                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                        ></div>
+                        <div
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                        >
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
+                                Stage 0 (Logic Test) - Stage 2 Participant
+                            </h3>
+                            <h4 class="mb-2 font-bold text-lg">
+                                Samsung Innovation Campus Batch 6
+                            </h4>
+                            <p
+                                class="text-sm leading-snug text-justify tracking-wide text-gray-300 text-opacity-100"
+                            >
+                                I was a participant in Samsung Innovation Campus
+                                Batch 6, successfully progressing from Stage 0
+                                (Logic Test) to Stage 2. This participation
+                                demonstrates my ability in complex
+                                problem-solving, logical thinking, and
+                                adaptability to technical challenges within a
+                                competitive environment.
+                            </p>
+                            <p class="text-xs text-gray-400 mt-2">2025</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mb-8 flex justify-between items-center w-full right-timeline"
+                    >
+                        <div class="order-1 w-5/12"></div>
+                        <div
+                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                        ></div>
+                        <div
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                        >
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
+                                Staff of Documentation
+                            </h3>
+                            <h4 class="mb-2 font-bold text-lg">
+                                Technocorner FT UGM 2025
+                            </h4>
+                            <p
+                                class="text-sm leading-snug text-justify tracking-wide text-gray-300 text-opacity-100"
+                            >
+                                As a Documentation Staff at Technocorner FT UGM,
+                                I was responsible for comprehensively recording,
+                                organizing, and presenting event information and
+                                activities. This experience refined my
+                                meticulousness, organizational skills, and my
+                                ability to compile detailed and easily
+                                understandable reports or informational
+                                materials.
+                            </p>
+                            <p class="text-xs text-gray-400 mt-2">2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project" class="mt-12 pt-24">
+            <div>
+                <h2 class="text-4xl font-bold text-center mb-10 text-white">
+                    PROJECT
+                </h2>
+            </div>
+            <div class="flex justify-center">
+                <div
+                    class="w-10/12 lg:w-4/12 h-full text-white bg-blue-900 rounded-xl shadow-inner"
+                >
+                    <div
+                        class="w-full rounded-t-md aspect-video bg-[url(./images/website.png)] bg-cover bg-center"
+                    ></div>
+                    <div class="py-5 px-7">
+                        <h1 class="text-2xl font-semibold text-blue-100 mb-2">
+                            This Website
+                        </h1>
+                        <p class="text-sm text-zinc-300 text-justify mb-2">
+                            This is my first website project, a significant
+                            initial step in my journey to delve into software
+                            engineering. I developed this website as a primary
+                            means for practice and exploration, built using HTML
+                            for content structure, Tailwind CSS for efficient
+                            and responsive styling, and a touch of JavaScript to
+                            add interactive functionality. This project not only
+                            serves as a simple portfolio but also as tangible
+                            proof of my commitment to continuously learn and
+                            apply programming knowledge.
+                        </p>
+                        <p class="text-sm font-medium text-blue-400">2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            id="social-media"
+            class="pb-32 bg-gradient-to-b from-zinc-900/70 to-blue-900/60"
+        >
+            <div class="mt-20">
+                <div>
+                    <h1 class="text-4xl font-bold text-center mb-10 text-white">
+                        SOCIAL MEDIA
+                    </h1>
+                </div>
+                <div class="social-icons p-8 text-center space-x-8">
+                    <a
+                        href="https://x.com/azzgjlss"
+                        title="twitter"
+                        class="inline-block text-white text-6xl no-underline group transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
+                        target="_blank"
+                    >
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/amantajatii/"
+                        title="instagram"
+                        class="inline-block text-white text-6xl no-underline group transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
+                        target="_blank"
+                    >
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/diazamantajatisusilo/"
+                        title="linkedin"
+                        class="inline-block text-white text-6xl no-underline group transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
+                        target="_blank"
+                    >
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end of main content -->
+
+        <script>
+            function openMobileNav() {
+                const mobileNav = document.getElementById("mobile-nav");
+                mobileNav.classList.remove(
+                    "opacity-0",
+                    "pointer-events-none"
+                );
+                mobileNav.classList.add(
+                    "opacity-100",
+                    "pointer-events-auto"
+                );
+            }
+
+            function closeMobileNav() {
+                const mobileNav = document.getElementById("mobile-nav");
+                mobileNav.classList.remove(
+                    "opacity-100",
+                    "pointer-events-auto"
+                );
+                mobileNav.classList.add(
+                    "opacity-0",
+                    "pointer-events-none"
+                );
+            }
+        </script>
+    </body>
+</html>
