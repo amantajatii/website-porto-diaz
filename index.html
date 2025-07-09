@@ -22,7 +22,7 @@
     <body class="bg-zinc-900">
         <div
             id="mobile-nav"
-            class="z-50 -mt-8 bg-black/70 backdrop-blur-md w-full h-full fixed flex flex-col justify-center items-center text-2xl gap-y-5 text-white opacity-0 pointer-events-none transform transition-opacity duration-300 ease-out"
+            class="z-50 -mt-8 bg-black/30 backdrop-blur-lg w-full h-full fixed flex flex-col justify-center items-center text-2xl gap-y-5 text-white opacity-0 pointer-events-none transform transition-opacity duration-300 ease-out"
             onclick="closeMobileNav()"
         >
             <a href="#" class="">Home</a>
@@ -82,12 +82,12 @@
         <div class="w-screen h-auto overflow-hidden -mt-12">
             <div
                 id="home"
-                class="bg-gradient-to-b from-zinc-900 to-blue-950/50 rounded-b-full -mx-50"
+                class="bg-gradient-to-b from-zinc-900 to-blue-950/50 rounded-b-5xl"
             >
                 <div
-                    class="py-32 mx-60 block md:flex items-center justify-evenly"
+                    class="py-32 p-5 md:flex md:items-center md:justify-evenly"
                 >
-                    <div class="text-white space-y-4 mb-20">
+                    <div class="text-white space-y-4 mb-20 md:mb-0 flex flex-col justify-center">
                         <h2 class="text-5xl font-medium">Hi, I'm</h2>
                         <h1 class="text-6xl text-blue-400 font-semibold">
                             Diaz Amantajati
@@ -108,13 +108,15 @@
         <!-- end of home -->
         <!-- about me -->
         <section id="about">
-            <div class="pb-24 px-16 md:px-32 bg-gradient-to-b from-zinc-900 to-zinc-950">
+            <div
+                class="pb-24 px-10 md:px-32 bg-gradient-to-b from-zinc-900 to-zinc-950"
+            >
                 <div class="flex">
-                    <div class="pt-24 flex justify-start">
+                    <div class="pt-32 flex justify-start">
                         <h1 class="text-5xl font-bold text-white">ABOUT ME</h1>
                     </div>
                 </div>
-                <div class="w-full md:w-10/12 block pt-10">
+                <div class="w-full md:w-10/12 block pt-6 md:pt-10">
                     <p class="text-zinc-200 text-justify">
                         I'm Diaz, 18, an Information Technology student at
                         Universitas Gadjah Mada in Yogyakarta. My journey began
@@ -136,26 +138,26 @@
             id="my-journey"
             class="pt-24 px-4 bg-gradient-to-b from-zinc-950 to-zinc-900 text-white"
         >
-            <div class="container mx-auto">
+            <div class="md:container mx-auto">
                 <h2 class="text-5xl font-bold text-center mb-10 text-white">
                     MY JOURNEY
                 </h2>
 
-                <div class="relative wrap overflow-hidden p-10 h-full">
+                <div class="relative wrap overflow-hidden p-3 md:p-10 h-full">
                     <div
-                        class="border-2-2 absolute border-opacity-20 border-blue-500/50 h-full border"
+                        class="border-2-2 absolute border-opacity-20 border-blue-500/50 h-full border hidden md:flex"
                         style="left: 50%"
                     ></div>
 
                     <div
-                        class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+                        class="mb-8 flex justify-between flex-row-reverse items-center w-full md:left-timeline"
                     >
-                        <div class="order-1 w-5/12"></div>
+                        <div class="order-1 md:w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl size-10 rounded-full"
+                            class="z-20 items-center order-1 bg-blue-500 shadow-xl size-10 rounded-full hidden md:flex"
                         ></div>
                         <div
-                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl md:w-5/12 px-6 py-4"
                         >
                             <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 School
@@ -181,12 +183,12 @@
                     <div
                         class="mb-8 flex justify-between items-center w-full right-timeline"
                     >
-                        <div class="order-1 w-5/12"></div>
+                        <div class="order-1 md:w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 hidden md:flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
-                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl md:w-5/12 px-6 py-4"
                         >
                             <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 Staff of Media
@@ -213,12 +215,12 @@
                     <div
                         class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
                     >
-                        <div class="order-1 w-5/12"></div>
+                        <div class="order-1 md:w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 hidden md:flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
-                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl md:w-5/12 px-6 py-4"
                         >
                             <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 Staff of Illustration and Layout
@@ -246,12 +248,12 @@
                     <div
                         class="mb-8 flex justify-between items-center w-full right-timeline"
                     >
-                        <div class="order-1 w-5/12"></div>
+                        <div class="order-1 md:w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 hidden md:flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
-                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl md:w-5/12 px-6 py-4"
                         >
                             <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 Staff of Media Creative
@@ -276,12 +278,12 @@
                     <div
                         class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
                     >
-                        <div class="order-1 w-5/12"></div>
+                        <div class="order-1 md:w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 hidden md:flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
-                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl md:w-5/12 px-6 py-4"
                         >
                             <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 Staff of DDD
@@ -307,12 +309,12 @@
                     <div
                         class="mb-8 flex justify-between items-center w-full right-timeline"
                     >
-                        <div class="order-1 w-5/12"></div>
+                        <div class="order-1 md:w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 hidden md:flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
-                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl md:w-5/12 px-6 py-4"
                         >
                             <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 Staff of Design
@@ -338,12 +340,12 @@
                     <div
                         class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
                     >
-                        <div class="order-1 w-5/12"></div>
+                        <div class="order-1 md:w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 hidden md:flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
-                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl md:w-5/12 px-6 py-4"
                         >
                             <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 Stage 0 (Logic Test) - Stage 2 Participant
@@ -369,12 +371,12 @@
                     <div
                         class="mb-8 flex justify-between items-center w-full right-timeline"
                     >
-                        <div class="order-1 w-5/12"></div>
+                        <div class="order-1 md:w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 hidden md:flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
-                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
+                            class="order-1 bg-zinc-800 rounded-lg shadow-xl md:w-5/12 px-6 py-4"
                         >
                             <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 Staff of Documentation
@@ -479,14 +481,8 @@
         <script>
             function openMobileNav() {
                 const mobileNav = document.getElementById("mobile-nav");
-                mobileNav.classList.remove(
-                    "opacity-0",
-                    "pointer-events-none"
-                );
-                mobileNav.classList.add(
-                    "opacity-100",
-                    "pointer-events-auto"
-                );
+                mobileNav.classList.remove("opacity-0", "pointer-events-none");
+                mobileNav.classList.add("opacity-100", "pointer-events-auto");
             }
 
             function closeMobileNav() {
@@ -495,10 +491,7 @@
                     "opacity-100",
                     "pointer-events-auto"
                 );
-                mobileNav.classList.add(
-                    "opacity-0",
-                    "pointer-events-none"
-                );
+                mobileNav.classList.add("opacity-0", "pointer-events-none");
             }
         </script>
     </body>
